@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #E5E5E5;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #00093C;
+    padding: 30px 100px;
+}
+
+.header__nav {
+    margin-left: 100px;
+} 
+
+.header__ul {
+    display: flex;
+    gap: 50px;
+}
+
+.header__ul li a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap:  15px;
+    transition: .5s ease;
+    padding-bottom: 10px;
+}
+
+.header__ul li a:hover {
+    border-bottom: 4px solid transparent;
+    border-image: linear-gradient(to left,#27AAE1 ,#F7941D) 50;
+    -moz-border-image: -moz-linear-gradient(to left,#27AAE1 ,#F7941D);
+    -webkit-border-image: -webkit-linear-gradient(to left,#27AAE1 ,#F7941D);
+    border-image-slice: 2;
+} 
+
+.section__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    margin-top: 36px;
+    margin-left: 100px;
+}
+
+.section__header {
+    margin-left: 430px;
+    display: flex;
+    align-items: center;
+    gap: 160px;
+    margin-top: 60px;
+}
+
+.child {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: .5s ease;
+    padding-bottom: 30px;
+}
+
+.child:hover {
+    border-bottom: 4px solid transparent;
+    border-image: linear-gradient(to left,#27AAE1 ,#F7941D) 50;
+    -moz-border-image: -moz-linear-gradient(to left,#27AAE1 ,#F7941D);
+    -webkit-border-image: -webkit-linear-gradient(to left,#27AAE1 ,#F7941D);
+    border-image-slice: 2;
+}
+
+.child h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+} 
+
+.child p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.section__hr {
+    max-width: 1180px;
+    height: 0px;
+    margin-left: 100px;
+}
+
+.section__inps {
+    margin-left: 100px;
+}
+
+.inps__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.section__inps label,input {
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+}
+
+.section__inps label {
+    margin-bottom: 25px;
+}
+
+.inp {
+    margin-bottom: 20px;
+}
+
+.boxes__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.glava {
+    display: flex;
+    margin-top: 30px;
+}
+
+.inps__hr {
+    margin-bottom: 25px;
+    border: 1px solid #E0E0E0;
+    width: 280px;
+}
+
+.section__boxes {
+    margin-left: 50px;
+}
+
+
+.block {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+input[type="radio"] {
+    height: 1.2em;
+    width: 1.2em;
+    vertical-align: middle;
+    margin: 0 0.4em 0.4em 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background: -webkit-linear-gradient(#FCFCFC, #DADADA);
+    box-shadow:inset 1px 1px 0 #fff, 0 1px 1px rgba(0,0,0,0.1);
+    -webkit-transition: box-shadow 200ms;
+    -webkit-appearance: none;
+    -webkit-border-radius:100%;
+    border-radius:100%;
+    border-color:rgba(0,0,0,0.5);
+    box-shadow:inset 1px 1px 0 #fff, 0 0 4px rgba(0,0,0,0.3);
+    background-image: -webkit-linear-gradient(#C2C2C2, #EFEFEF);
+    box-shadow:inset 1px 1px 0 rgba(0,0,0,0.2), inset -1px -1px 0 rgba(255,255,255,0.6);
+    border-color:rgba(0,0,0,0.5);
+}
+
+input[type="radio"]:checked:before {
+    display: block;
+    height: 0.7em;
+    width: 0.7em;
+    position: relative;
+    left: 0.2em;
+    top: 0.2em;
+    background: linear-gradient(90deg, #F7941D 0%, #27AAE1 100%);
+    border-radius: 100%;
+    content: '';
+}
+
+input[type="radio"]:checked{
+    border-color:rgba(0, 0, 0, 0.5)
+}
+
+.blocks {
+    max-width: 700px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.cards {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.card__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.card__img {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 20px;
+    margin-bottom: 22px;
+}
+
+.card__type {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 200px;
+}
+
+.card__desc {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    max-width: 300px;
+    color: #4F4F4F;
+    margin-bottom: 25px;
+}
+
+.card__foot {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.card {
+    background-color: #FFE38E;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 430px;
+    box-shadow: 5px 5px 5px white;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.card:hover {
+    box-shadow: 10px 10px 10px white;
+    transform: scale(1.1);
+}
+
+.card:first-child {
+    background-color: #C7EEFF;
+}
+
+.card:nth-child(2) {
+    background-color: #FFCE94;
+}
+
+.card:nth-child(5) {
+    background-color: #B8EFCF;
+}
+
+.card:nth-child(6) {
+    background-color: #C7EEFF;
+}
+
+.card:nth-child(7) {
+    background-color: #C5DDFF;
+}
+
+.card:nth-child(8) {
+    background-color: #FFE9A8;
+}
+
+.card:nth-child(9) {
+    background-color: #FFEEF6;
+}
+
+.card:nth-child(10) {
+    background-color: #DDDDFF;
+}
