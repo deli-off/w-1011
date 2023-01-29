@@ -109,6 +109,7 @@ let block6 = document.createElement('div')
 let block7 = document.createElement('div')
 let block8 = document.createElement('div')
 let block9 = document.createElement('div')
+let cards = document.createElement('div')
 
 
 
@@ -152,6 +153,7 @@ block6.classList.add('block')
 block7.classList.add('block')
 block8.classList.add('block')
 block9.classList.add('block')
+cards.classList.add('cards')
 
 
 // text
@@ -255,7 +257,7 @@ aSeven.href = '/'
 
 // append 
 blocks.append(block1, block2, block3, block4, block5, block6, block7, block8, block9)
-section__boxes.append(boxes__title, blocks)
+section__boxes.append(boxes__title, blocks, cards)
 inp7.append(inputSeven, labelSeven)
 inp6.append(inputSix, labelSix)
 inp5.append(inputFive, labelFive)
@@ -295,12 +297,45 @@ header.append(header__logo, nav__wrapper)
 container.append(header, section)
 
 
+const cardCreat = () => {
+    for (let i = 0; i < 10; i++) {
+        // create
+        let card = document.createElement('div')
+        let card__title = document.createElement('h2')
+        let card__img = document.createElement('div')
+        let img = document.createElement('img')
+        let card__type = document.createElement('p')
+        let card__desc = document.createElement('p')
+        let card__foot = document.createElement('span')
+
+        // class 
+        card.classList.add('card')
+        card__title.classList.add('card__title')
+        card__img.classList.add('card__img')
+        card__type.classList.add('card__type')
+        card__foot.classList.add('card__foot')
+        cards.classList.add('cards')
+
+        // text 
+        card__title.innerHTML = 'Программа'
+        card__type.innerHTML = '«Разработка мобильных приложений»'
+        card__desc.innerHTML = 'Разработчик мобильных приложений создаёт приложения, которыми люди ежедневно пользуются на смартфонах, умных часах и планшетах.'
+        card__foot.innerHTML = '24 месяца'
 
 
+        // atribute
+        img.setAttribute('src', './assets/img/phone.png')
+        img.setAttribute('width', '26px')
+        img.setAttribute('height', '42px')
 
+        // append 
+        card__img.append(img, card__type)
+        card.append(card__title, card__img, card__desc, card__foot)
+        cards.append(card)
+    }
+}
 
-
-
+cardCreat()
 
 
 

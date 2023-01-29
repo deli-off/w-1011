@@ -184,6 +184,8 @@ a {
     padding: 15px;
     border-radius: 6px;
     white-space: nowrap;
+    cursor: pointer;
+    transition: .5s ease;
 }
 
 input[type="radio"] {
@@ -268,7 +270,6 @@ input[type="radio"]:checked{
     line-height: 18px;
     max-width: 300px;
     color: #4F4F4F;
-    margin-bottom: 25px;
 }
 
 .card__foot {
@@ -277,13 +278,19 @@ input[type="radio"]:checked{
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
+    margin-top: 20px;
+}
+
+.card__foot {
+    display: inline-block;
+    margin-top: 25px;
 }
 
 .card {
     background-color: #FFE38E;
     border-radius: 20px;
     padding: 30px;
-    max-width: 500px;
+    max-width: 420px;
     box-shadow: 5px 5px 5px white;
     cursor: pointer;
     transition: .5s ease;
@@ -329,4 +336,9 @@ input[type="radio"]:checked{
 
 .card:nth-child(10) {
     background-color: #DDDDFF;
+}
+
+.block:hover {
+    color: #fff;
+    background-color: #54ed39
 }
